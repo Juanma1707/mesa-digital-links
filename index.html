@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="es-PE" class="dark h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>Mesa Digital | Enlaces Oficiales</title>
+  <meta name="description" content="El canal de pedidos directos para tu restaurante. Sin comisiones abusivas. Carta web con comanda automática a WhatsApp y cálculo de delivery por GPS." />
+  <meta name="theme-color" content="#0a1224" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mesa Digital | Enlaces Oficiales" />
+  <meta property="og:description" content="El canal de pedidos directos para tu restaurante. Sin comisiones abusivas." />
+  <meta property="og:image" content="./assets/mesa-digital-perfil-claro-1080.png" />
+
+  <!-- Tipografía Editorial Uniforme: Syne (Display) + Plus Jakarta Sans + JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&family=JetBrains+Mono:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            corporateNavy: '#0a1224',
+            corporateDark: '#060a14',
+            surfaceNavy: '#0f1b33',
+            surfaceCard: '#13223f',
+            navyBorder: '#1e335a',
+            emeraldBrand: '#10b981',
+            amberBrand: '#f59e0b'
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            mono: ['"JetBrains Mono"', 'monospace']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Bloqueo riguroso de scroll para experiencia Single-Viewport de pantalla única */
+    html, body {
+      background: radial-gradient(circle at 20% 15%, #0e1e3e 0%, #0a1224 45%, #060a14 100%);
+      color: #ffffff;
+      height: 100%;
+      height: 100dvh;
+      max-height: 100dvh;
+      overflow: hidden;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      -webkit-user-select: none;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    }
+
+    /* Resplandor ambiental corporativo */
+    .ambient-glow {
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100vw;
+      max-width: 1200px;
+      height: 600px;
+      pointer-events: none;
+      z-index: 0;
+      background: radial-gradient(circle at 25% 25%, rgba(32, 206, 181, 0.08) 0%, transparent 55%),
+                  radial-gradient(circle at 75% 35%, rgba(25, 35, 84, 0.45) 0%, transparent 65%);
+      filter: blur(65px);
+    }
+
+    /* Malla sutil */
+    .dot-pattern {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+      background-size: 22px 22px;
+      mask-image: radial-gradient(ellipse 70% 70% at 50% 30%, #000 20%, transparent 85%);
+      -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 30%, #000 20%, transparent 85%);
+      z-index: 1;
+    }
+
+    /* Micro-interacción táctil */
+    .tap-btn {
+      transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .tap-btn:active {
+      transform: scale(0.985);
+    }
+
+    /* Barra de progreso de tabs */
+    .tab-progress-bar {
+      transition: width 0.1s linear;
+    }
+  </style>
+</head>
+
+<body class="min-h-[100dvh] max-h-[100dvh] h-[100dvh] flex flex-col justify-between relative overflow-hidden selection:bg-emerald-500/25 selection:text-white">
+
+  <!-- Luces ambientales y textura -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="dot-pattern" aria-hidden="true"></div>
+
+  <!-- CONTENEDOR PRINCIPAL: PANTALLA ÚNICA -->
+  <main class="relative z-10 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 sm:py-5 lg:py-7 flex-1 flex flex-col justify-between overflow-hidden">
+    
+    <!-- GRID RESPONSIVE: SPLIT VIEW EN DESKTOP / STACK FLUIDO EN MÓVIL -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-3.5 sm:gap-6 lg:gap-12 items-center flex-1 my-auto max-h-[calc(100dvh-54px)]">
+      
+      <!-- ============================================================
+           COLUMNA IZQUIERDA: MARCA, ACCIONES Y BLINDAJE LEGAL
+           ============================================================ -->
+      <div class="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
+        
+        <!-- CABECERA -->
+        <header class="flex flex-col items-start text-left">
+          
+          <!-- Bloque de Isotipo y Título Display -->
+          <div class="flex items-center gap-3 sm:gap-3.5 mb-2 sm:mb-2.5">
+            <!-- Isotipo oficial pulido en contenedor rounded-2xl -->
+            <div class="w-11 h-11 sm:w-13 sm:h-13 rounded-2xl bg-surfaceNavy border border-navyBorder p-1 shadow-xl shrink-0 flex items-center justify-center">
+              <img 
+                src="./assets/mesa-digital-perfil-claro-1080.png" 
+                alt="Mesa Digital Isotipo" 
+                class="w-full h-full object-contain rounded-xl"
+                loading="eager"
+                onerror="this.onerror=null; this.src='../assets/mesa-digital-perfil-claro-1080.png';"
+              />
+            </div>
+            
+            <!-- Titular Display Contundente -->
+            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold font-display tracking-tight text-white leading-none">
+              MESA DIGITAL
+            </h1>
+          </div>
+
+          <!-- Subtítulo Limpio y Orgánico -->
+          <p class="text-xs sm:text-sm lg:text-[15px] text-slate-300 max-w-md leading-relaxed font-normal mb-3 sm:mb-5">
+            El canal de pedidos directos para tu restaurante. Sin comisiones abusivas.
+          </p>
+
+        </header>
+
+        <!-- LOS 2 BOTONES DE CONVERSIÓN -->
+        <section class="flex flex-col gap-2.5 sm:gap-3.5 w-full" aria-label="Enlaces principales">
+
+          <!-- BOTÓN 1: Web Oficial -->
+          <a 
+            href="https://mesa-digital-landing-seven.vercel.app/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            id="btn-conocer"
+            class="tap-btn group relative flex items-center justify-between p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-surfaceCard/90 border border-navyBorder hover:border-slate-300 text-left shadow-lg shadow-black/40 overflow-hidden"
+          >
+            <div class="flex items-center gap-3 sm:gap-3.5 min-w-0 pr-2">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-surfaceNavy border border-navyBorder text-slate-200 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:text-white transition-all">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-bold text-white font-display text-[14px] sm:text-[15px] leading-snug group-hover:text-slate-100 transition-colors truncate">
+                  Conocer Mesa Digital 🌐
+                </span>
+                <span class="text-[11px] sm:text-xs text-slate-400 mt-0.5 leading-tight truncate">
+                  Explora la plataforma oficial, funciones y propuesta
+                </span>
+              </div>
+            </div>
+
+            <!-- Flecha diagonal indicadora -->
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-surfaceNavy border border-navyBorder flex items-center justify-center text-slate-400 shrink-0 group-hover:text-white group-hover:border-slate-300 group-hover:translate-x-0.5 transition-all">
+              <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg>
+            </div>
+          </a>
+
+          <!-- BOTÓN 2 (Principal): WhatsApp Comercial -->
+          <a 
+            href="https://api.whatsapp.com/send/?phone=51957418893&text=Hola%2C+quiero+activar+la+prueba+de+7+d%C3%ADas+de+Mesa+Digital+para+mi+restaurante" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            id="btn-whatsapp"
+            class="tap-btn group relative flex items-center justify-between p-3.5 sm:p-4 rounded-xl sm:rounded-2xl bg-[#063c2c]/60 border border-[#10b981]/60 hover:border-emerald-400 hover:bg-[#063c2c]/85 text-left shadow-lg shadow-black/40 overflow-hidden"
+          >
+            <!-- Sutil glow esmeralda en hover -->
+            <div class="absolute -top-10 -right-10 w-24 h-24 bg-emerald-500/10 rounded-full blur-xl group-hover:bg-emerald-500/20 transition-colors pointer-events-none" aria-hidden="true"></div>
+
+            <div class="flex items-center gap-3 sm:gap-3.5 min-w-0 pr-2">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center shrink-0 group-hover:scale-105 group-hover:bg-emerald-500/30 group-hover:text-emerald-300 transition-all">
+                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662a11.835 11.835 0 005.711 1.454h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+              </div>
+              <div class="flex flex-col min-w-0">
+                <span class="font-bold text-emerald-400 font-display text-[14px] sm:text-[15px] leading-snug group-hover:text-emerald-300 transition-colors truncate">
+                  Solicitar 7 Días de Prueba Gratis 💬
+                </span>
+                <span class="text-[11px] sm:text-xs text-slate-300 mt-0.5 leading-tight truncate">
+                  Prueba el sistema en tus horas punta sin ningún costo
+                </span>
+              </div>
+            </div>
+
+            <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-[#063c2c] border border-emerald-500/40 flex items-center justify-center text-emerald-400 shrink-0 group-hover:text-white group-hover:bg-emerald-500/40 group-hover:border-emerald-300 group-hover:translate-x-0.5 transition-all">
+              <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="9 18 15 12 9 6"></polyline>
+              </svg>
+            </div>
+          </a>
+
+        </section>
+
+
+
+      </div>
+
+      <!-- ============================================================
+           COLUMNA DERECHA: SHOWCASE PERSUASIVO DE ALTO IMPACTO
+           ============================================================ -->
+      <div class="lg:col-span-6 xl:col-span-6 flex flex-col justify-center">
+        
+        <!-- CONTENEDOR DEL SHOWCASE -->
+        <div class="w-full rounded-2xl bg-surfaceNavy/90 border border-navyBorder p-3 sm:p-5 flex flex-col justify-between shadow-2xl relative overflow-hidden h-[250px] sm:h-[285px] lg:h-[320px]">
+          
+          <!-- PESTAÑAS INTERACTIVAS CON BARRA DE PROGRESO DE 3.5 SEGUNDOS -->
+          <div class="grid grid-cols-3 gap-2 pb-2.5 border-b border-navyBorder shrink-0">
+            
+            <button type="button" onclick="setStep(0)" class="flex flex-col items-start gap-1 text-left cursor-pointer group">
+              <span id="tab-label-0" class="text-[10px] font-mono font-bold tracking-wider text-emerald-400">01 CARTA WEB</span>
+              <div class="w-full h-1 bg-surfaceCard rounded-full overflow-hidden">
+                <div id="bar-0" class="tab-progress-bar h-full bg-emerald-400 w-0"></div>
+              </div>
+            </button>
+
+            <button type="button" onclick="setStep(1)" class="flex flex-col items-start gap-1 text-left cursor-pointer group">
+              <span id="tab-label-1" class="text-[10px] font-mono font-bold tracking-wider text-slate-500">02 GPS DELIVERY</span>
+              <div class="w-full h-1 bg-surfaceCard rounded-full overflow-hidden">
+                <div id="bar-1" class="tab-progress-bar h-full bg-emerald-400 w-0"></div>
+              </div>
+            </button>
+
+            <button type="button" onclick="setStep(2)" class="flex flex-col items-start gap-1 text-left cursor-pointer group">
+              <span id="tab-label-2" class="text-[10px] font-mono font-bold tracking-wider text-slate-500">03 WHATSAPP</span>
+              <div class="w-full h-1 bg-surfaceCard rounded-full overflow-hidden">
+                <div id="bar-2" class="tab-progress-bar h-full bg-emerald-400 w-0"></div>
+              </div>
+            </button>
+
+          </div>
+
+          <!-- CONTENIDO PERSUASIVO DINÁMICO DE LOS 3 PASOS -->
+          <div class="relative flex-1 flex flex-col justify-center pt-2 sm:pt-3 overflow-hidden">
+            
+            <!-- PASO 1 (Carta Web): Tarjeta con foto real de hamburguesa -->
+            <div id="step-content-0" class="flex flex-col justify-between h-full transition-opacity duration-300">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-mono font-bold text-amberBrand bg-amberBrand/10 border border-amberBrand/20 px-2 py-0.5 rounded-md">
+                  PASO 01 • CARTA DIGITAL WEB
+                </span>
+                <span class="text-[11px] text-slate-400 font-mono">Sin descargar apps</span>
+              </div>
+              
+              <!-- Tarjeta gastronómica apetitosa con foto real -->
+              <div class="p-2 sm:p-2.5 rounded-xl bg-corporateDark/90 border border-navyBorder flex items-center justify-between gap-3">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <div class="w-12 h-12 rounded-lg overflow-hidden border border-navyBorder shrink-0 bg-slate-900">
+                    <img 
+                      src="./assets/hero-smash.jpg" 
+                      alt="Burger Artesanal" 
+                      class="w-full h-full object-cover"
+                      onerror="this.onerror=null; this.src='../assets/hero-smash.jpg';"
+                    />
+                  </div>
+                  <div class="min-w-0">
+                    <div class="text-xs font-bold text-white font-display truncate">Burger Artesanal Clásica</div>
+                    <div class="text-[10px] text-amberBrand font-mono font-bold mt-0.5">S/ 24.90</div>
+                    <div class="flex items-center gap-1.5 mt-0.5">
+                      <span class="text-[9px] px-1.5 py-0.2 rounded bg-surfaceCard text-slate-300 font-mono">✓ Tártara</span>
+                      <span class="text-[9px] px-1.5 py-0.2 rounded bg-surfaceCard text-slate-300 font-mono">✓ Ají de la casa</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="px-2.5 py-1.5 rounded-lg bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 text-[10px] font-mono font-bold shrink-0">
+                  + Agregar
+                </div>
+              </div>
+
+              <p class="text-[10.5px] text-slate-400 leading-tight mt-1">
+                El comensal navega tu menú en segundos, selecciona acompañamientos y pide directo sin registrarse.
+              </p>
+            </div>
+
+            <!-- PASO 2 (GPS Delivery): Cálculo de tarifa automática -->
+            <div id="step-content-1" class="hidden flex-col justify-between h-full transition-opacity duration-300">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">
+                  PASO 02 • RADIOS POR GPS
+                </span>
+                <span class="text-[11px] text-slate-400 font-mono">Distancia Real</span>
+              </div>
+              
+              <!-- Tarjeta de cálculo exacto -->
+              <div class="p-2 sm:p-2.5 rounded-xl bg-corporateDark/90 border border-navyBorder flex flex-col gap-1.5">
+                <div class="flex items-center justify-between text-[11px]">
+                  <span class="text-slate-300 flex items-center gap-1.5">
+                    <span class="text-emerald-400">📍</span> Ruta optimizada del cliente:
+                  </span>
+                  <span class="font-mono font-bold text-white bg-surfaceCard px-2 py-0.5 rounded border border-navyBorder">2.4 km • 12 min</span>
+                </div>
+                <div class="flex items-center justify-between text-[11px] pt-1.5 border-t border-navyBorder/80">
+                  <span class="text-slate-300">Tarifa calculada:</span>
+                  <span class="font-mono font-bold text-emerald-400 text-xs">S/ 3.50 (Cobro exacto)</span>
+                </div>
+              </div>
+
+              <p class="text-[10.5px] text-slate-400 leading-tight mt-1">
+                Cero cálculos manuales. El costo se calcula por distancia real por GPS sin intermediarios.
+              </p>
+            </div>
+
+            <!-- PASO 3 (WhatsApp): Comanda formateada para cocina -->
+            <div id="step-content-2" class="hidden flex-col justify-between h-full transition-opacity duration-300">
+              <div class="flex items-center justify-between mb-1">
+                <span class="text-[10px] font-mono font-bold text-emerald-400 bg-emerald-500/10 border border-emerald-500/20 px-2 py-0.5 rounded-md">
+                  PASO 03 • COMANDA FORMATEADA
+                </span>
+                <span class="text-[10px] px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 font-mono font-bold">
+                  ✓ LISTO PARA DESPACHO
+                </span>
+              </div>
+
+              <!-- Tarjeta de comanda en WhatsApp -->
+              <div class="p-2 sm:p-2.5 rounded-xl bg-[#063c2c]/30 border border-[#10b981]/40 flex flex-col gap-1 text-[11px]">
+                <div class="flex items-center justify-between font-mono text-[10px] text-emerald-300 border-b border-emerald-500/20 pb-1">
+                  <span class="font-bold">🍔 NUEVO PEDIDO #0142</span>
+                  <span>Pago: Yape (S/ 28.40)</span>
+                </div>
+                <div class="text-[10.5px] text-slate-200 mt-0.5 flex flex-col leading-tight">
+                  <span>• 1x Burger Artesanal Clásica (S/ 24.90)</span>
+                  <span class="text-slate-400 text-[10px]">  ↳ Salsas: Tártara artesanal, Ají de la casa</span>
+                  <span class="text-emerald-400 text-[10px] font-mono mt-0.5">🛵 Envío 2.4 km: S/ 3.50 • Ubicación Maps ↗</span>
+                </div>
+              </div>
+
+              <p class="text-[10.5px] text-slate-400 leading-tight mt-1">
+                La orden llega estructurada a tu WhatsApp para cocina en 15 segundos sin audios confusos.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Indicador de Puntos Discreto -->
+          <div class="flex items-center justify-end pt-2 border-t border-navyBorder shrink-0">
+            <div class="flex items-center gap-1.5">
+              <span id="dot-0" class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+              <span id="dot-1" class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+              <span id="dot-2" class="w-1.5 h-1.5 rounded-full bg-slate-700"></span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pt-2 border-t border-navyBorder/80 flex items-center justify-between gap-2 text-center sm:text-left shrink-0">
+      <p class="text-[10.5px] text-slate-500 font-normal">
+        © Mesa Digital • Infraestructura tecnológica para restaurantes
+      </p>
+      <div class="flex items-center gap-3 text-[10.5px] text-slate-400">
+        <button 
+          type="button" 
+          onclick="openModal('privacy')" 
+          class="hover:text-emerald-400 transition-colors underline underline-offset-2 decoration-navyBorder cursor-pointer"
+        >
+          Política de Privacidad
+        </button>
+        <span class="text-slate-600">•</span>
+        <button 
+          type="button" 
+          onclick="openModal('terms')" 
+          class="hover:text-emerald-400 transition-colors underline underline-offset-2 decoration-navyBorder cursor-pointer"
+        >
+          Términos del Servicio
+        </button>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- ============================================================
+       MODAL 1: POLÍTICA DE PRIVACIDAD (Ley N° 29733 - Perú)
+       ============================================================ -->
+  <div 
+    id="modal-privacy" 
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-200"
+    role="dialog" 
+    aria-modal="true"
+    aria-labelledby="modal-privacy-title"
+  >
+    <div class="w-full max-w-lg rounded-2xl bg-surfaceNavy border border-navyBorder shadow-2xl p-5 sm:p-6 text-left flex flex-col max-h-[85vh] overflow-hidden">
+      
+      <div class="flex items-center justify-between pb-3 border-b border-navyBorder">
+        <div class="flex items-center gap-2">
+          <span class="text-emerald-400">🔒</span>
+          <h2 id="modal-privacy-title" class="text-base sm:text-lg font-bold font-display text-white">
+            Política de Privacidad y Datos
+          </h2>
+        </div>
+        <button type="button" onclick="closeModal('privacy')" class="w-8 h-8 rounded-lg bg-surfaceCard text-slate-400 hover:text-white flex items-center justify-center border border-navyBorder cursor-pointer transition-colors">
+          ✕
+        </button>
+      </div>
+
+      <div class="overflow-y-auto py-4 space-y-3.5 text-xs text-slate-300 leading-relaxed pr-1">
+        <p>
+          <strong class="text-white">Conforme a la Ley N° 29733</strong> (Ley de Protección de Datos Personales de la República del Perú) y su Reglamento:
+        </p>
+        <p>
+          <strong>1. Propiedad y Confidencialidad de la Información:</strong> Mesa Digital no comercializa, transfiere ni cede bajo ninguna modalidad las bases de datos de clientes, números de teléfono ni historiales de pedidos que ingresen a través de las cartas web del restaurante.
+        </p>
+        <p>
+          <strong>2. Destino Directo de Pedidos:</strong> Cada comanda generada por el comensal se envía de forma encriptada y directa al número de WhatsApp del establecimiento comercial correspondiente. Mesa Digital no retiene medios de pago ni números de tarjeta de crédito.
+        </p>
+        <p>
+          <strong>3. Seguridad Operativa:</strong> Las conexiones utilizan cifrado SSL/TLS de grado bancario para garantizar la integridad de los menús, precios y geolocalizaciones GPS.
+        </p>
+      </div>
+
+      <div class="pt-3 border-t border-navyBorder flex justify-end">
+        <button type="button" onclick="closeModal('privacy')" class="px-4 py-2 rounded-xl bg-surfaceCard hover:bg-slate-800 text-white text-xs font-semibold border border-navyBorder transition-colors cursor-pointer">
+          Entendido
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ============================================================
+       MODAL 2: TÉRMINOS DEL SERVICIO (Prueba de 7 Días & Propiedad)
+       ============================================================ -->
+  <div 
+    id="modal-terms" 
+    class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-200"
+    role="dialog" 
+    aria-modal="true"
+    aria-labelledby="modal-terms-title"
+  >
+    <div class="w-full max-w-lg rounded-2xl bg-surfaceNavy border border-navyBorder shadow-2xl p-5 sm:p-6 text-left flex flex-col max-h-[85vh] overflow-hidden">
+      
+      <div class="flex items-center justify-between pb-3 border-b border-navyBorder">
+        <div class="flex items-center gap-2">
+          <span class="text-amberBrand">⚖️</span>
+          <h2 id="modal-terms-title" class="text-base sm:text-lg font-bold font-display text-white">
+            Términos del Servicio
+          </h2>
+        </div>
+        <button type="button" onclick="closeModal('terms')" class="w-8 h-8 rounded-lg bg-surfaceCard text-slate-400 hover:text-white flex items-center justify-center border border-navyBorder cursor-pointer transition-colors">
+          ✕
+        </button>
+      </div>
+
+      <div class="overflow-y-auto py-4 space-y-3.5 text-xs text-slate-300 leading-relaxed pr-1">
+        <p>
+          <strong>1. Período de Prueba de 7 Días:</strong> El acceso a la prueba gratuita de 7 días se concede sin necesidad de registrar tarjetas de crédito ni contratos de permanencia forzosa. No se aplicarán cobros automáticos al finalizar el período.
+        </p>
+        <p>
+          <strong>2. Modelo 0% Comisiones:</strong> Mesa Digital no cobra comisiones porcentuales sobre las ventas o pedidos procesados por el restaurante. El restaurante mantiene el 100% de sus ingresos directos.
+        </p>
+        <p>
+          <strong>3. Autonomía de Contenidos:</strong> Los restaurantes conservan en todo momento la titularidad de sus marcas, fotos, platos y precios. La disponibilidad del servicio cuenta con un estándar de operatividad de alta disponibilidad en la nube.
+        </p>
+      </div>
+
+      <div class="pt-3 border-t border-navyBorder flex justify-end">
+        <button type="button" onclick="closeModal('terms')" class="px-4 py-2 rounded-xl bg-surfaceCard hover:bg-slate-800 text-white text-xs font-semibold border border-navyBorder transition-colors cursor-pointer">
+          Cerrar
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- CONTROLADOR JS DEL SHOWCASE Y MODALES -->
+  <script>
+    const DURATION = 3500; // 3.5s por paso
+    let currentStep = 0;
+    let animFrameId = null;
+    let startTime = null;
+
+    function renderStep(index) {
+      currentStep = index;
+
+      for (let i = 0; i < 3; i++) {
+        const content = document.getElementById(`step-content-${i}`);
+        const label = document.getElementById(`tab-label-${i}`);
+        const bar = document.getElementById(`bar-${i}`);
+        const dot = document.getElementById(`dot-${i}`);
+
+        if (i === index) {
+          content.classList.remove('hidden');
+          content.classList.add('flex');
+          label.classList.remove('text-slate-500');
+          label.classList.add('text-emerald-400');
+          dot.classList.remove('bg-slate-700');
+          dot.classList.add('bg-emerald-400');
+        } else {
+          content.classList.add('hidden');
+          content.classList.remove('flex');
+          label.classList.remove('text-emerald-400');
+          label.classList.add('text-slate-500');
+          bar.style.width = i < index ? '100%' : '0%';
+          dot.classList.remove('bg-emerald-400');
+          dot.classList.add('bg-slate-700');
+        }
+      }
+    }
+
+    function animateBar(timestamp) {
+      if (!startTime) startTime = timestamp;
+      const elapsed = timestamp - startTime;
+      const progress = Math.min(elapsed / DURATION, 1);
+      
+      const activeBar = document.getElementById(`bar-${currentStep}`);
+      if (activeBar) {
+        activeBar.style.width = (progress * 100) + '%';
+      }
+
+      if (progress < 1) {
+        animFrameId = requestAnimationFrame(animateBar);
+      } else {
+        nextStep();
+      }
+    }
+
+    function startCycle() {
+      if (animFrameId) cancelAnimationFrame(animFrameId);
+      startTime = null;
+      renderStep(currentStep);
+      animFrameId = requestAnimationFrame(animateBar);
+    }
+
+    function nextStep() {
+      currentStep = (currentStep + 1) % 3;
+      startCycle();
+    }
+
+    function setStep(index) {
+      if (animFrameId) cancelAnimationFrame(animFrameId);
+      currentStep = index;
+      startCycle();
+    }
+
+    // Manejo de Modales
+    function openModal(id) {
+      const modal = document.getElementById(`modal-${id}`);
+      if (!modal) return;
+      modal.classList.remove('opacity-0', 'pointer-events-none');
+      modal.classList.add('opacity-100');
+    }
+
+    function closeModal(id) {
+      const modal = document.getElementById(`modal-${id}`);
+      if (!modal) return;
+      modal.classList.remove('opacity-100');
+      modal.classList.add('opacity-0', 'pointer-events-none');
+    }
+
+    // Cerrar al pulsar Escape
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeModal('privacy');
+        closeModal('terms');
+      }
+    });
+
+    // Iniciar al cargar
+    window.addEventListener('DOMContentLoaded', () => {
+      startCycle();
+    });
+  </script>
+
+</body>
+</html>
